@@ -80,7 +80,7 @@ const App = () => {
             .del(id)
             .then(data => {
                 setPersons(persons.filter(p => p.id !== id))
-                setMessage(`Deleted ${delPerson.name}`)
+                setMessage(['message',`Deleted ${delPerson.name}`])
                 setTimeout(() => setMessage(''), 2000)
             })
     }
